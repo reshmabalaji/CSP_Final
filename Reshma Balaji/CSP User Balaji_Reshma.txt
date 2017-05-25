@@ -29,3 +29,32 @@ elif 36 <= randomNumber <= 93:
 else:
     newRandom = randomNumber
     print "second random",newRandom
+
+
+
+Commented Code: 
+import random #function that imports a module that generates random numbers in this specific case from the python library. 
+
+
+x = int(raw_input("Please enter a number up to 100. ")) #Tells you to enter a random number - uses that random number as the input (x)
+z = random.randint(40,100) # Z is the output - a random number between 40 to 100. 
+""" x and z can both be used below without errors -- testing/learning"""
+
+randomNumber = random.randint(1,z) #Prints out the output (a random integer)
+print "first random",randomNumber #Shows that it's the first number, prints a random number
+
+
+if 35 >= randomNumber:#Says that if the input number is less than or equal to 35. . .
+    newRandom = randomNumber * .5 #the new random number (output) is equal to the input random number multiplied by 0.5 
+    newRandom = newRandom + 9 #the second random number will be the new random number from the previous step plus 9
+    print "second random " "%.f" % newRandom #Shows that it's the second random number
+
+elif 36 <= randomNumber <= 93:#otherwise (else), if the input number is greater than or equal to 36, the new random number will be less than or equal to 93
+    newRandom = randomNumber + 7 #the new random number is equal to the input random number plus 7
+    print "second random " "%.f" % newRandom #Shows that it's the scecond random number / prints it. 
+
+else:
+    newRandom = randomNumber #otherwise, if the new random number is equal to the input random number. . .
+    print "second random",newRandom #print that it's the second random, and then print the new random number. 
+    #In the End, it prints two random outputs / numbers. A first random value, and a second random value. 
+    
