@@ -3,3 +3,29 @@ Reshma Balaji
 //Insert Name into this Document on line 2
 
 //Insert url where you forked a repository
+https://codereview.stackexchange.com/questions/58165/simple-random-number-generator
+
+
+import random
+
+
+x = int(raw_input("Please enter a number up to 100. "))
+z = random.randint(40,100)
+""" x and z can both be used below without errors -- testing/learning"""
+
+randomNumber = random.randint(1,z)
+print "first random",randomNumber
+
+
+if 35 >= randomNumber:
+    newRandom = randomNumber * .5
+    newRandom = newRandom + 9
+    print "second random " "%.f" % newRandom
+
+elif 36 <= randomNumber <= 93:
+    newRandom = randomNumber + 7
+    print "second random " "%.f" % newRandom
+
+else:
+    newRandom = randomNumber
+    print "second random",newRandom
